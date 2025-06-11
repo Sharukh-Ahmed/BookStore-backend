@@ -23,7 +23,7 @@ app.use(cors({
 app.get('/', (request, response)=> {
     console.log(request);
     
-    return response.status(234).send("Hiiiii")
+    return response.status(234).send("This is a Full CRUD RESTfull API for Bookstore made by Sharukh Ahmed")
 });
 
 app.use('/books', booksRoute);
