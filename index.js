@@ -15,9 +15,9 @@ app.use(express.json());
 // app.use(cors());
 //option 2: Allow Custom Origins
 app.use(cors({
-    origin: 'https://book-store-ashen-delta.vercel.app/',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type'],
+  origin: ['https://book-store-ashen-delta.vercel.app'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type'],
 }));
 
 app.get('/', (request, response)=> {
